@@ -43,7 +43,7 @@ def drawBar(t):
 
 def processLine(line, wordCounts):
     line = replacePunctuations(line)
-    words = line.split()
+    words = line.split() + jieba.lcut(line, cut_all=True)
     for word in words:
         if word in wordCounts:
             wordCounts[word] += 1
