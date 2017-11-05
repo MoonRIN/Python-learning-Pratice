@@ -10,4 +10,4 @@ def getHtmlText(url):
     except:
         return ""
 
-def parserHtml()
+def parserHtml():
