@@ -8,7 +8,10 @@ a = np.arange(0.0, 5.0, 0.02)
 
 plt.subplot(211)
 plt.plot(a, f(a))
+plt.set_title('nihaoa')
 
 plt.subplot(2,1,2)
 plt.plot(a, np.cos(2*np.pi*a), 'r--')
+
+plt.savefig('动力衰减图像.png')
 plt.show()
